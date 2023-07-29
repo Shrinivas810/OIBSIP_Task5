@@ -1,0 +1,5 @@
+<!-- circular_button_stop.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#F2EF1B" /> <!-- Button background color for Stop button -->
+</shape>

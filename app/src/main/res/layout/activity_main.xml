@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!-- Start, Stop, Lap, and Reset Buttons -->
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/clock_shape"
+        android:gravity="center"
+        android:text="00:00:000"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/start_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/timer_text_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/circular_button_green"
+        android:text="Start"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/timer_text_view"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@id/start_button"
+        android:background="@drawable/circular_button_stop"
+        android:text="Stop" />
+
+    <ImageButton
+        android:id="@+id/reset_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/timer_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/circular_button"
+        android:text="Reset" />
+
+
+    >
+
+</RelativeLayout>
